@@ -79,7 +79,6 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 2rem;   /** Separación forma Nueva **/
-
 }
 
 .navegacion__enlace {
@@ -117,10 +116,6 @@ h3 {
 .producto {
   background-color: var(--primarioOscuro);
   padding: 1rem;
-}
-
-.producto__imagen {
-  width: 100%;
 }
 
 .producto__nombre {
@@ -180,7 +175,7 @@ h3 {
 
 .nosotros__imagen {
   grid-row: 1 / 2;
-  width: 100%;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -189,16 +184,77 @@ h3 {
   }
 }
 
+/* Bloques */
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
 
+@media (min-width: 768px) {
+  .bloques {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
+.bloque {
+  text-align: center;
+}
+
+.bloque_titulo {
+  margin: 0;
+}
+
+/* Página del Producto */
+@media (min-width: 768px) {
+  .camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.formulario__campo {
+  /* border-color: var(--primarioOscuro);
+  border-width: 1rem;
+  border-style: solid; */
+
+  border: 1rem solid var(--primarioOscuro); /* Es lo mismo que las tres lineas anteriores (Ancho, tipo y color) */
+  background-color: transparent;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
+}
+
+.formulario__submit {
+  background-color: var(--secundario);
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+  padding: 2rem;
+  transition: background-color .3s ease;
+  grid-column: 1 / 3;
+}
+
+.formulario__submit:hover {
+  cursor: pointer;
+  background-color: var(--secundarioOscuro);
+
+}
 
 /** Footer */
 .footer {
   background-color: var(--primarioOscuro);
   padding: 1rem 0;
   margin-top: 2rem;
-
-
 }
 
 .footer__texto {
