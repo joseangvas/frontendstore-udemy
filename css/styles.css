@@ -6,7 +6,6 @@
   --secundarioOscuro: rgb(233,287,2);
   --blanco: #FFF;
   --negro: #000;
-
   --fuentePrincipal: 'Staatliches', cursive;
 }
 
@@ -48,7 +47,7 @@ img {
 h1, h2, h3 {
   text-align: center;
   color: var(--secundario);
-  font-family: var(fuentePrincipal);
+  font-family: var(--fuentePrincipal);
 }
 
 h1 {
@@ -60,19 +59,17 @@ h2 {
 }
 
 h3 {
-  font-size; 2.4rem;
+  font-size: 2.4rem;
 }
 
 /* Header */
 .header {
   display: flex;
   justify-content: center;
-
 }
 
 .header__logo {
   margin: 3rem 0;
-
 }
 
 /* Navegación */
@@ -90,7 +87,6 @@ h3 {
   color: var(--blanco);
   font-size: 3rem;
   /** margin-right: 2rem;    Solo si no se usa gap en navegacion Padre **/
-
 }
 
 /**
@@ -158,11 +154,11 @@ h3 {
 
 .grafico--camisas {
   grid-row: 2 / 3;
-  background-image: url('../img/grafico1.jpg');
+  background-image: url('/img/grafico1.jpg');
 }
 
 .grafico--node {
-  background-image: url('../img/grafico2.jpg');
+  background-image: url('/img/grafico2.jpg');
   grid-row: 8 / 9;
 }
 
